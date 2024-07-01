@@ -1,0 +1,108 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #647a93; /* Adjust background color */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar-logo {
+    color: white;
+    text-decoration: none;
+    margin-left: 11.75rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-logo:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+}
+
+.navbar-container {
+    background: #647A93;
+    position: relative;
+    height: 5.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.6875rem;
+    padding-bottom: 1.6875rem;
+    font-size: 1.375rem;
+    font-family: "Satoshi-Medium";
+    z-index: 1000;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 11.75rem;
+    z-index: 1000;
+  }
+
+  .menu-button {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+
+  .nav-links.active {
+    color: #d8e7ec;
+  }
+
+  .nav-links:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width: 1040px) {
+    .navbar-logo {
+      color: white;
+      text-decoration: none;
+      margin-left:2rem;
+    }
+    .menu-button {
+      display: initial;
+    }
+    .nav-menu {
+      display: flex;
+      margin-right: 2rem;
+      z-index: 0;
+    }
+    .nav-items {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;   
+      height: 100vh;
+      background-color: #434C69;
+      position: absolute;
+      top: 0;
+      left: -100%;
+      z-index: -1;
+      transition: 0.3s;
+    }
+    .nav-items.active {
+      left: 0;
+    }
+    .nav-links {
+      font-size: 1.8rem;
+    }
+    .menu-button {
+      display: initial;
+    }
+  }
