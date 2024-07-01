@@ -11,8 +11,9 @@
     align-items: flex-start;
     margin-left: 11.75rem;
     margin-right: 11.75rem;
-    margin-top: 23.5rem;
+    margin-top: 26rem;
     margin-bottom: 10rem;
+    height: 100vh;
 }
 .home-content {
     color: #434C69;
@@ -20,13 +21,13 @@
 
 .home-title {
     font-family: "Satoshi-Medium";
-    font-size: 6rem;
+    font-size: 4rem;
     padding-bottom: 24px;
 }
 
 .home-desc {
     font-family: "Satoshi-Medium";
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     padding-bottom: 57px;
 }
 
