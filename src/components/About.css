@@ -1,11 +1,12 @@
 .about-container {
-    height: 100vh;
+    height: fit-content;
     background-color: #E5EBEF;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     flex-direction: row;
+    padding: 3rem;
 }
 
 .about-content-container {
@@ -95,12 +96,6 @@
 }
 
 @media screen and (max-width: 1550px) {
-    .about-container {
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-    
     .about-content-container {
         padding-top: 3.5rem;
         padding-left: 2rem;
@@ -182,9 +177,6 @@
 
 @media screen and (max-width: 1040px) {
     .about-container {
-        height: fit-content;
-        align-items: center;
-        justify-content: center;
         display: flex;
         flex-direction: column;
     }    
