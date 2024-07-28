@@ -9,8 +9,8 @@
 
 .home-content-container {
     align-items: flex-start;
-    margin-left: 11.75rem;
-    margin-right: 11.75rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
     margin-top: 20rem;
     margin-bottom: 10rem;
 }
@@ -29,7 +29,6 @@
     font-size: 1.8rem;
     padding-bottom: 57px;
 }
-
 
 .wrap {
     padding-right: 4px;
@@ -121,14 +120,14 @@
 
     .home-desc {
         font-size: 1rem;
-        text-align: center; /* Ensure text is centered */
+        text-align: center;
         width: 100%;
 
     }
     .home-button-container {
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Center buttons horizontally */
+        justify-content: center;
         gap: 0em;
     }
     .home-button {

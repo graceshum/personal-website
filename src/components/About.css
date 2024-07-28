@@ -1,4 +1,220 @@
-.container {
+.about-container {
     height: 100vh;
     background-color: #E5EBEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+}
+
+.about-content-container {
+    background-color: white; 
+    padding-top: 4rem;
+    padding-left: 2rem;
+    border-radius: 15px; 
+    border: 1px solid #434C69; 
+    height: 620px;
+    width: 440px;
+    text-align: left;
+    margin-right: 13rem;
+    margin-left: 10rem
+}
+
+.text-block {
+    padding-bottom: 2rem;
+
+}
+
+.about-sub {
+    font-family: "Satoshi-Bold";
+    font-size: 1rem;
+    color: #555D7D;
+}
+
+.about-headers {
+    font-family: "Satoshi-Bold";
+    font-size: 2rem;
+    color: #434C69;
+}
+
+/* .tape-img {
+    z-index: 1; 
+    position: absolute;
+    top: calc(15%); 
+    left: calc(50% - 75px); 
+    width: 150px; 
+    height: auto; 
+} */
+
+.about-img {
+    width: 170px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.about-skills {
+    padding: 20px;
+}
+
+.skills-container {
+    background-color: #D5E0E7; 
+    width: 600px; 
+    border-radius: 15px; 
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 185px;
+    margin-bottom: 40px;
+}
+
+.slider-container {
+    height: 173px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-item {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.skill-item img {
+    max-width: 65px;
+    height: 60px; 
+    margin-left: 32%;
+}
+
+.skill-item p {
+    font-family: "Satoshi-Medium";
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1550px) {
+    .about-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    
+    .about-content-container {
+        padding-top: 3.5rem;
+        padding-left: 2rem;
+        margin-left: 7rem;
+        border-radius: 15px; 
+        border: 1px solid #434C69; 
+        height: 545px;
+        width: 380px;
+        text-align: left;
+        margin-right: 9rem;
+    }    
+    
+    .about-sub {
+        font-size: 0.9rem;
+    }
+    
+    .about-headers {
+        font-size: 1.5rem;
+    }
+    
+    /* .tape-img {
+        z-index: 1; 
+        position: absolute;
+        top: calc(15%); 
+        left: calc(50% - 75px); 
+        width: 150px; 
+        height: auto; 
+    } */
+    
+    .skills-container {
+        background-color: #D5E0E7; 
+        width: 480px; 
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-right: 6rem;
+        margin-bottom: 40px;
+    }
+    
+}
+    
+
+@media screen and (max-width: 1220px) {
+    .about-content-container {
+        padding-top: 3rem;
+        padding-left: 2rem;
+        height: 520px;
+        width: 350px;
+        text-align: left;
+    }    
+    
+    .about-sub {
+        font-size: 0.75rem;
+    }
+    
+    .about-headers {
+        font-size: 1.25rem;
+    }
+    
+    .about-img {
+        width: 150px;
+    }
+    
+    /* .tape-img {
+        z-index: 1; 
+        position: absolute;
+        top: calc(15%); 
+        left: calc(50% - 75px); 
+        width: 150px; 
+        height: auto; 
+    } */
+    
+    
+    .skills-container {
+        background-color: #D5E0E7; 
+        width: 380px;  
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .about-container {
+        height: fit-content;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }    
+    .about-content-container {
+        margin-left: 0;
+        margin-right: 0;
+        height: 520px;
+        width: 320px;
+        text-align: left;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }    
+    
+    /* .tape-img {
+        z-index: 1; 
+        position: absolute;
+        top: calc(15%); 
+        left: calc(50% - 75px); 
+        width: 150px; 
+        height: auto; 
+    } */
+    
+    .about-skills {
+        padding-top: 0;
+        margin-bottom: 7rem;
+    }
+    
+    .skills-container {
+        background-color: #D5E0E7; 
+        width: 300px;  
+        margin-right: 0;
+    }
 }

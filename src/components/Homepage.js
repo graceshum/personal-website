@@ -7,7 +7,7 @@ document.documentElement.style.setProperty('--vh', `${screenHeight * 0.01}px`);
 
 export const Homepage = () => {
     const allText = ["hey there!", "i'm grace, a student at northwestern university", "i'm studying computer science", 
-        "I'm interested in software engineering and data science", "i'm also interested in ui/ux design and web/app dev",
+        "i'm interested in software engineering and data science", "i'm also interested in ui/ux design and web/app dev",
         "i also love to draw and play piano", "thanks for visiting!"]
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);

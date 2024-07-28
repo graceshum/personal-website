@@ -1,0 +1,9 @@
+.projects-container {
+    height: 100vh;
+    background-color: #DCE6DB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: row;
+}
