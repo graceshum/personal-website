@@ -16,7 +16,7 @@ const skillsData = [
     imgSrc: firebaseImg
   },
   {
-    title: "expo",
+    title: "expo go",
     imgSrc: expoImg
   }
 ];

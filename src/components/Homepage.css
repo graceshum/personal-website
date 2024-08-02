@@ -9,10 +9,9 @@
 
 .home-content-container {
     align-items: flex-start;
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-left: 11.8rem;
     margin-top: 20rem;
-    margin-bottom: 10rem;
+    margin-bottom: 11.5rem;
 }
 .home-content {
     color: #434C69;
@@ -20,13 +19,13 @@
 
 .home-title {
     font-family: "Satoshi-Medium";
-    font-size: 5rem;
+    font-size: 5.4rem;
     padding-bottom: 24px;
 }
 
 .home-desc {
     font-family: "Satoshi-Medium";
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     padding-bottom: 57px;
 }
 
@@ -37,6 +36,7 @@
 
 .home-button {
     font-family: "Satoshi-Medium";
+    font-size: 1.1rem;
     text-decoration: none;
     margin-top: 1.5rem;
     color: black;
@@ -44,11 +44,53 @@
     margin-right: 16px;
     background-color: white;
     border-radius: 15px;
+    transition: 0.35s;
+}
+
+.home-button:hover {
+    background-color: rgb(235, 235, 235); 
 }
 
 .home-img {
     height: 171px;
     width: 187px;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+@keyframes bounce {
+    0%, 50%, 100% {
+        transform: translateY(0) rotate(45deg);
+    }
+    50% {
+        transform: translateY(-13px) rotate(45deg);
+    }
+}
+
+.arrow {
+    border: solid black;
+    border-color: #434C69;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12.5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: 0.3s;
+    animation: bounce 3s infinite;
+    margin: 0.5%;
+    scroll-behavior: smooth;
+}
+
+.arrow:hover {
+
+	opacity: 60%;
+	transform: scale(1.25) rotate(45deg);
 }
 
 @media screen and (max-width: 1440px) {
@@ -57,13 +99,13 @@
     }
     .home-title {
         font-family: "Satoshi-Medium";
-        font-size: 4rem;
+        font-size: 3.7rem;
         padding-bottom: 24px;
     }
     
     .home-desc {
         font-family: "Satoshi-Medium";
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         padding-bottom: 57px;
     }
     
@@ -88,7 +130,12 @@
         height: 140px;
         width: 160px;
     }
+
+    .arrow {
+        padding: 10px
+    }
 }
+
 @media screen and (max-width: 768px) {
     .home-container {
         align-items: center;

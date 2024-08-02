@@ -1,18 +1,19 @@
 import "./About.css"
 import React from 'react';
 import aboutIcon from '../assets/about-me-cat.png';
-import tapeIcon from '../assets/tape.png'
+// import tapeIcon from '../assets/tape.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import skillsData from '../data/skills.js'; // Path to your JSON file
+import skillsData from '../data/skills.js';
 import techData from '../data/technologies.js';
+import resumePdf from '../assets/resume.pdf';
 
-// CAROUSEL COMPONENT FOR SKILLS + TECHNOLOGIES
-const SkillCarousel = ({ skills }) => {
+// SLIDER COMPONENT FOR SKILLS + TECHNOLOGIES
+const SkillSlider = ({ skills }) => {
   const settings = {
     infinite: true,
-    speed: 300,
+    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,
@@ -65,7 +66,10 @@ export const About = () => {
                 <img src={aboutIcon} alt="about icon" className="about-img"/>
                 <div className="text-block">
                     <p className="about-sub">want to know more?</p>
-                    <h1 className="about-headers">resume</h1>
+                    <h1 className="about-headers">
+                      <a className="about-headers" href={resumePdf} target="_blank" rel="noopener noreferrer">
+                      resume</a>
+                    </h1>
                 </div>  
             </div>
             {/* skills right side */}
@@ -75,14 +79,14 @@ export const About = () => {
                     <h1 className="about-headers">programming languages</h1>
               </div>
               <div className="skills-container">
-                  <SkillCarousel skills={skillsData} />
+                  <SkillSlider skills={skillsData} />
               </div>
               <div className="text-block">
                     <p className="about-sub">frameworks, libraries, infrastructure, etc.</p>
                     <h1 className="about-headers">technologies</h1>
               </div>
               <div className="skills-container">
-                  <SkillCarousel skills={techData} />
+                  <SkillSlider skills={techData} />
               </div>
             </div>
         </section>

@@ -2,9 +2,6 @@ import "./Homepage.css"
 import React, { useState, useEffect } from 'react';
 import homeIcon from '../assets/home-icon.png';
 
-const screenHeight = window.innerHeight;
-document.documentElement.style.setProperty('--vh', `${screenHeight * 0.01}px`);
-
 export const Homepage = () => {
     const allText = ["hey there!", "i'm grace, a student at northwestern university", "i'm studying computer science", 
         "i'm interested in software engineering and data science", "i'm also interested in ui/ux design and web/app dev",
@@ -60,13 +57,15 @@ export const Homepage = () => {
                     <img src={homeIcon} alt="home icon" className="home-img"/>
                     <h1 className="home-title">grace shum</h1>
                     <p className="home-desc"><span className="wrap">{text}</span></p>
-                    <div className="home-button-container">
-                        <a href="https://www.linkedin.com/in/grace-shum0419/" target="_blank" rel="noopener noreferrer" className="home-button">linkedin →</a>
+                    <div>
+                        <a href="https://www.linkedin.com/in/~graceshum" target="_blank" rel="noopener noreferrer" className="home-button">linkedin →</a>
                         <a href="https://github.com/graceshum" target="_blank" rel="noopener noreferrer" className="home-button">github →</a>
-                        <a href="mailto:graceshum2027@u.northwestern.edu" target="_blank" rel="noopener noreferrer" className="home-button">email →</a>
+                        <a href="mailto:graceshum@u.northwestern.edu" target="_blank" rel="noopener noreferrer" className="home-button">email →</a>
                     </div>
-                    
                 </div>
+            </div>
+            <div className="arrow-container">
+                <a href="#aboutSection" class="arrow"></a>
             </div>
         </section>
     );

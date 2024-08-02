@@ -24,6 +24,11 @@
   src: local('Satoshi-Black'), url(./fonts/Satoshi-Black.otf) format('otf');
 }
 
+@font-face {
+  font-family: 'Satoshi-Italic';
+  src: local('Satoshi-Italic'), url(./fonts/Satoshi-Italic.otf) format('otf');
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
