@@ -1,7 +1,6 @@
 import "./Projects.css"
 import React, { useState } from 'react';
 import projectData from '../data/projects.js' 
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -9,17 +8,6 @@ export const Projects = () => {
     const [filter, setFilter] = useState("all")
     // filter projects by what filter currently equals
     const filteredProjects = filter === "all" ? projectData : projectData.filter(project => project.type === filter)
-    
-    // // settings for slick slider
-    // const settings = {
-    //     infinite: true,
-    //     speed: 300,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     dots: false,
-    //     arrows: false,
-    //   };
-
     return (
         <section className="projects-container" id="projectSection">
             <div className="projects-content-container">

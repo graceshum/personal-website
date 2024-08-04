@@ -1,7 +1,6 @@
 import "./About.css"
 import React from 'react';
 import aboutIcon from '../assets/about-me-cat.png';
-// import tapeIcon from '../assets/tape.png'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -53,7 +52,6 @@ const SkillSlider = ({ skills }) => {
 export const About = () => {  
     return (
         <section className="about-container" id="aboutSection">
-            {/* <img src={tapeIcon} alt="tape icon" className="tape-img"/> */}
             <div className="about-content-container">
                 <div className="text-block">
                     <p className="about-sub">2005.19.04</p>
