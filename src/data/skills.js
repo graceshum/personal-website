@@ -5,6 +5,7 @@ import htmlImg from '../assets/skills/html.png';
 import cssImg from '../assets/skills/css.png';
 import cImg from '../assets/skills/c.png';
 import cppImg from '../assets/skills/c++.png';
+import sqlImg from '../assets/skills/sql.png';
 
 const skillsData = [
   {
@@ -34,6 +35,10 @@ const skillsData = [
   {
     title: "c++",
     imgSrc: cppImg
+  },
+  {
+    title: "sql",
+    imgSrc: sqlImg
   }
 ];
 

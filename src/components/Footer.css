@@ -1,0 +1,37 @@
+.footer-container {
+    height: fit-content;
+    background-color: #CEDDE8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.footer-content-container {
+    text-align: center;
+}
+
+.footer-button {
+    font-family: "Satoshi-Medium";
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    color: #2b2f3d;
+    padding: 7px 25px;
+    margin-right: 16px;
+    transition: 0.35s;
+    border-radius: 15px;
+}
+
+.footer-button:hover {
+    background-color: #c3d1dd; 
+}
+
+.footer-desc {
+    font-family: "Satoshi-Light";
+    font-size: 13.5px;
+    color: #363C4E;
+    margin-top: 0.9rem;
+}
