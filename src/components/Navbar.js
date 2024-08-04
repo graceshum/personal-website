@@ -22,17 +22,17 @@ function Navbar() {
             <FaBars onClick={handleClick} size={25} style={{color:"white"}} className="menu-button"/>} 
             <ul className={click ? "nav-items active" : "nav-items"}>   
               <li>
-                <Link to='homeSection' spy={true} smooth={true} offset={-70} duration={500} className='nav-links' onClick={closeMobileMenu}>
+                <Link to='homeSection' spy={true} smooth={true} offset={-60} duration={400} className='nav-links' onClick={closeMobileMenu}>
                   home
                 </Link>
               </li>
               <li>
-                <Link to="aboutSection" spy={true} smooth={true} offset={-70} duration={500} className='nav-links' onClick={closeMobileMenu}>
+                <Link to="aboutSection" spy={true} smooth={true} offset={-60} duration={400} className='nav-links' onClick={closeMobileMenu}>
                   about
                 </Link>
               </li>
               <li>
-                <Link to='projectSection' spy={true} smooth={true} offset={-70} duration={500} className='nav-links' onClick={closeMobileMenu}>
+                <Link to='projectSection' spy={true} smooth={true} offset={-60} duration={400} className='nav-links' onClick={closeMobileMenu}>
                   projects
                 </Link>
               </li>
