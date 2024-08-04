@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react';
 import homeIcon from '../assets/home-icon.png';
 import { motion } from "framer-motion";
 
+const screenHeight = window.innerHeight;
+document.documentElement.style.setProperty('--vh', `${screenHeight * 0.01}px`);
+
 export const Homepage = () => {
     const allText = ["hey there!", "i'm grace, a student at northwestern university", "i'm studying computer science", 
         "i'm interested in software engineering and data science", "i'm also interested in ui/ux design and web/app dev",
@@ -73,10 +76,10 @@ export const Homepage = () => {
                     <motion.img src={homeIcon} alt="home icon" className="home-img" variants={textVariants}/>
                     <motion.h1 className="home-title" variants={textVariants}>grace shum</motion.h1>
                     <motion.p className="home-desc" variants={textVariants}><span className="wrap">{text}</span></motion.p>
-                    <motion.div>
-                        <motion.a href="https://www.linkedin.com/in/~graceshum" target="_blank" rel="noopener noreferrer" variants={textVariants} className="home-button">linkedin →</motion.a>
-                        <motion.a href="https://github.com/graceshum" target="_blank" rel="noopener noreferrer" variants={textVariants} className="home-button">github →</motion.a>
-                        <motion.a href="mailto:graceshum@u.northwestern.edu" target="_blank" rel="noopener noreferrer" variants={textVariants} className="home-button">email →</motion.a>
+                    <motion.div className="home-button-container" variants={textVariants}>
+                        <motion.a href="https://www.linkedin.com/in/~graceshum" target="_blank" rel="noopener noreferrer" className="home-button">linkedin →</motion.a>
+                        <motion.a href="https://github.com/graceshum" target="_blank" rel="noopener noreferrer" className="home-button">github →</motion.a>
+                        <motion.a href="mailto:graceshum@u.northwestern.edu" target="_blank" rel="noopener noreferrer" className="home-button">email →</motion.a>
                     </motion.div>
                 </motion.div>
             </div>
