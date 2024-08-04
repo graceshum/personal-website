@@ -146,19 +146,36 @@
 }
 
 @media screen and (max-width: 1040px) {
-.project-title {
-    font-size: 4.25rem;
-}
-.button-container button {
-    font-size: 1rem;
-}
-
-.projects-container {
+    .project-title {
+        font-size: 4.25rem;
+    }
+    .button-container button {
+        font-size: 1rem;
+    }
     .project-icon-container {
         padding: 4rem;
         flex-direction: column;
         background-color: #BBCBDD; 
         width: fit-content; 
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .project-title {
+        font-size: 4.25rem;
     }
-}   
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .button-container button {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .project-icon-container {
+        padding: 2rem;
+        flex-direction: column;
+        background-color: #BBCBDD; 
+        width: fit-content; 
+    }  
 }
