@@ -2,6 +2,7 @@ import "./Homepage.css"
 import React, { useState, useEffect } from 'react';
 import homeIcon from '../assets/home-icon.png';
 import { motion } from "framer-motion";
+import { HashLink } from 'react-router-hash-link';
 
 const screenHeight = window.innerHeight;
 document.documentElement.style.setProperty('--vh', `${screenHeight * 0.01}px`);
@@ -84,7 +85,7 @@ export const Homepage = () => {
                 </motion.div>
             </div>
             <div className="arrow-container">
-                <a href="#aboutSection" class="arrow"></a>
+                <HashLink smooth to="#aboutSection" className="arrow"></HashLink>
             </div>
         </section>
     );
