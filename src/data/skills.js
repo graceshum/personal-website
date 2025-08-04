@@ -6,6 +6,7 @@ import cssImg from '../assets/skills/css.png';
 import cImg from '../assets/skills/c.png';
 import cppImg from '../assets/skills/c++.png';
 import sqlImg from '../assets/skills/sql.png';
+import javaImg from '../assets/skills/java.png';
 
 const skillsData = [
   {
@@ -39,6 +40,10 @@ const skillsData = [
   {
     title: "sql",
     imgSrc: sqlImg
+  },
+  {
+    title: "java",
+    imgSrc: javaImg
   }
 ];
 

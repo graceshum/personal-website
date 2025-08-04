@@ -133,6 +133,16 @@
     padding: 5px;
 }
 
+.project-desc a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.project-desc a:hover {
+    color: #6B7AA3;
+    text-decoration: underline;
+}
+
 .project-desc p {
     font-family: "Satoshi-Light";
     font-size: 14px;

@@ -23,7 +23,11 @@ export const Projects = () => {
                                 <img className="project-pic" src={project.imgSrc} alt={project.title} />
                                 <div className="project-desc-layer">
                                     <div className="project-desc">
-                                        <h3>{project.title}</h3>
+                                        <h3>
+                                            {project.link ? 
+                                            ( <a href={project.link} target="_blank" rel="noopener noreffer"> {project.title}</a> ) :
+                                            (project.title)}
+                                        </h3>
                                         <p>{project.description}</p>
                                         <h4>{project.skills.join(' | ')}</h4>
                                     </div>
